@@ -1,0 +1,15 @@
+class Solution {
+    public char findTheDifference(String s, String t) {
+        
+        int sAscii=0;
+        int tAscii=0;
+        
+        for(int i=0;i<s.length();i++){
+            sAscii+=(int)s.charAt(i);
+            tAscii+=(int)t.charAt(i);
+            }
+            tAscii+=(int)t.charAt(t.length()-1);
+        
+            return (char)(tAscii-sAscii);
+        }
+    }
